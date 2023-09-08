@@ -23,6 +23,7 @@ li{
 .descripcion-profecion{
     font-size: 14px;
     font-weight: 700;
+    /* text-align: justify; */
 }
 
 /*-------------------*/
@@ -35,8 +36,8 @@ li{
 
 .nombre{
     font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
+    /* font-weight: 700; */
+    /* font-size: 45px; */
     line-height: 55px;
     color: #000000;
     margin-top: 20px;
@@ -44,7 +45,7 @@ li{
 }
 
 .texto-descripcion{
-    width: 400px;
+    width: 800px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -78,6 +79,8 @@ li{
 
 .descripcion{
     margin-bottom: 40px;
+    text-align: justify;
+    width: auto;
 }
 
 .lista-proyecto{
@@ -126,6 +129,7 @@ padding-left: 17px;
     line-height: 24px;
     color: #595959;
     padding-left: 17px;
+    text-align: justify;
 }
 
 .separador{
