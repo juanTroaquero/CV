@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js "></script>
+
+    <style>
+        body{
+    background-color: #F5F7FA;
+    font-family: 'Montserrat', 'Arial';
+}
+
+/*--------------------*/
+/*contenedor-principal*/
+/*--------------------*/
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    width: 1200px;
+    margin: 40px auto;
+}
+
+li{
+    /*background-color: yellow;*/
+    line-height: 24px;
+}
+
+.descripcion-profecion{
+    font-size: 14px;
+    font-weight: 700;
+    /* text-align: justify; */
+}
+
+/*-------------------*/
+/*Informacion General*/
+/*-------------------*/
+
+.informacion-general{
+    padding: 100px 80px;
+}
+
+.nombre{
+    font-style: normal;
+    /* font-weight: 700; */
+    /* font-size: 45px; */
+    line-height: 55px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.texto-descripcion{
+    width: 800px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+/*---------------------*/
+/*secciones principales*/
+/*---------------------*/
+
+.titulo-seccion-principal {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top:  45px;
+}
+
+.texto-naranja{
+    color: #FB6D3A;
+}
+
+.fechas{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+}
+
+.descripcion{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: auto;
+}
+
+.lista-proyecto{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+padding-left: 17px;
+}
+
+.enlace-proyecto{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.puntos-elences{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #595959;
+}
+
+/*------------------*/
+/*experiecia laboral*/
+/*------------------*/
+
+.puesto-empresa{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+
+.lista-experiencia-laboral{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    padding-left: 17px;
+    text-align: justify;
+}
+
+.separador{
+    color: black;
+    margin-left: 2px;
+    margin-right: 3px;
+}
+
+/*-------------------*/
+/*Informacion lateral*/
+/*-------------------*/
+
+.informacion-lateral{
+    background-color: #1E2939;
+    /*padding: 40px 0;*/
+    padding-top: 40px;
+}
+
+.titulo-lateral{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 50PX;
+    margin-bottom: 5px;
+}
+
+.Contactos, .Habilidades-tecincas, .Habilidades-blandas{
+    margin-left: 40PX;
+}
+
+.tipo-contacto{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    margin-right: 5px;
+}
+
+.contacto-info{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    opacity: 0.5;
+    margin-top: 2px;
+}
+
+/*--------------*/
+/*seccion listas*/
+/*--------------*/
+
+.lista-lateral{
+    padding: 17px;
+    margin-top: 5px;
+}
+
+.lista-lateral > li{
+    color: #FB6D3A;
+}
+
+.lista-info{
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+    </style>
+</head>
+
+<div>
+    <button onclick="generarPDF()">Generar PDF del Body</button>
+</div>
+<body>
+    <!--Contenedor principal-->
+    <div class="contenedor-principal">
+        <!--Informacion general-->
+        <div class="informacion-general">
+            <!--Descripcion-->
+            <div class="descripcion">
+                <h2 class="descripcion-profecion">Developer</h2>
+                <h1 class="nombre">Juan Fernando Troaquero Arteaga</h1>
+                <p class="texto-descripcion">
+                    Ingeniero de sistemas egresado de la Universidad Cooperativa De Colombia. Soy una persona
+                    responsable, amigable,
+                    sociable, dispuesto a cumplir con las distintas funciones encargadas, me gusta trabajar en equipo.
+                    Me considero una persona autodidacta. Mi objetivo profesional
+                    se centra en la implementación de mis conocimientos, para aportar en el mejoramiento continuo de las
+                    organizaciones, ayudando en los procesos de mejora continua.
+                </p>
+            </div>
+            <!--procyecto-->
+            <div class="proyecto">
+                <h3 class="titulo-seccion-principal">Projects</h3>
+                <ol class="lista-proyecto">
+                    <li class="primer-elemento-lista">
+                        <a class="enlace-proyecto"
+                            href="https://github.com/juanTroaquero/App-Paint">https://github.com/juanTroaquero/App-Paint</a>
+                        <span class="puntos-elences">..............</span>
+                        <span>[ HTML, CSS, JavaScript, Canvas ]</span>
+                    </li>
+                    <li>
+                        <a class="enlace-proyecto" href="https://github.com/juanTroaquero/Proyecto-CV">
+                            https://github.com/juanTroaquero/Proyecto-CV </a>
+                        <span class="puntos-elences">................</span>
+                        <span>[ HTML, CSS ]</span>
+                    </li>
+                    <li>
+                        <a class="enlace-proyecto" href="https://github.com/juanTroaquero/mi-primer-juego">
+                            https://github.com/juanTroaquero/mi-primer-juego </a>
+                        <span class="puntos-elences">....................</span>
+                        <span>[ C#, Godot, JDscript ]</span>
+                    </li>
+                    <li>
+                        <a class="enlace-proyecto" href="https://github.com/juanTroaquero/Campus-Virtual">
+                            https://github.com/juanTroaquero/Campus-Virtual </a>
+                        <span class="puntos-elences">....................</span>
+                        <span>[ Bootstrap, ASP.Net, C#, SQL, Java ]</span>
+                    </li>
+                </ol>
+            </div>
+            <!--Experiencia-->
+            <div class="Experiencia-laboral">
+                <h3 class="titulo-seccion-principal">Work Experience</h3>
+                <!--Empresa 1-->
+                <div>
+                    <h4 class="puesto-empresa">Empresa Sisma: Developer<span class="texto-naranja"> Freelance</span>
+                    </h4>
+                    <p class="fechas">Enero 2022 - febrero 2022 <span class="separador">|</span> Colombia</p>
+                    <ul class="lista-experiencia-laboral">
+                        <li>Desempeñe labores en esta empresa como desarrollador junior trabajando en las siguientes
+                            tecnologías, CRL, SOA,
+                            API REST, PHP, C#, SQL Y JAVA, todo enfocado al desarrollo del sector salud. </li>
+                    </ul>
+                </div>
+                <!--Empresa 2-->
+                <div>
+                    <h4 class="puesto-empresa">Empresa R&JTECHNOLOGY S.A.S : Developer<span class="texto-naranja">
+                            Freelance</span></h4>
+                    <p class="fechas">Septiembre 2022 - marzo 2023 <span class="separador">|</span> Colombia</p>
+                    <ul class="lista-experiencia-laboral">
+                        <li>Bajo la modalidad de prestación de Servicios, trabajé como asesor de servicios de implementación y desarrollo de Aplicación Total Quality WEB.
+                            Desarrollé habilidades técnicas a nivel de desarrollo e implementación. En esta empresa trabaje con varias tecnologías siendo la tecnología
+                            principal de trabajo .NET FRAMEWORK, implementando lenguajes como ASP, C#, Java, Bootstrap, AJAX, jquery, motor sql de Azure, JavaScript, canvas,
+                            todo esto para la creación de formularios y mejoramiento del software clínico Total Quality.</li>
+                    </ul>
+                </div>
+                <!--Empresa 3-->
+                <div>
+                    <h4 class="puesto-empresa">Empresa Fuel Control(FCS): data analyst<span class="texto-naranja">
+                            medium</span></h4>
+                    <p class="fechas">marzo 2023 - septiembre 2023 <span class="separador">|</span> Colombia</p>
+                    <ul class="lista-experiencia-laboral">
+                        <li>En esta empresa ejercí cómo analista de datos para el área de soporte de Fuel Control Solución, empresa enfocada al sector industrial de combustibles
+                            y estaciones de servicios, brindando acompañamiento y soluciones inmediatas a las estaciones de servicios con problemas presentados en los sistemas
+                            proporcionados por la empresa donde se manejan a nivel software y hardware.</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Educación-->
+            <div class="Educación">
+                <h3 class="titulo-seccion-principal">Education</h3>
+                <div>
+                    <h4 class="texto-naranja">UNIVERSISDAD COOPERATIVA DE COLOMBIA</h4>
+                    <p class="fechas">Enero 2017 - marzo 2022 <span class="separador">|</span> Colombia</p>
+                    <ul>
+                        <li>
+                            <h5>Titulo univesitario</h5>
+                        </li>
+                    </ul>
+                    <h4 class="texto-naranja">CURSOS RELEVANTES</h4>
+                    <p class="fechas">Enero 2017 - marzo 2022 <span class="separador">|</span> Colombia</p>
+                    <ul>
+                        <li>
+                            <h5>Análisis de sistemas,
+                                Programación orientada a objetos,
+                                Diseño de base de datos,
+                                Diseño orientado a objetos,
+                                Aspectos administrativos y económicos,
+                                Ingeniería de software y requerimientos,
+                                Gestión de base de datos,
+                                Aspectos contables para la gestión de proyectos,
+                                Formulación y evaluación de proyectos,
+                                Gestión de seguridad informática,
+                                Minería de datos,
+                                Técnicas de validación y simulación,
+                                Diseño de interfaces,
+                                Desarrollo de sistemas multimediales,
+                                Gerencia de proyectos,
+                                Arquitectura y modelamiento de software.</h5>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Informacion lateral-->
+        <aside class="informacion-lateral">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-yk4isaGoSyWur4Ea9HoZWCr_lq1uPygxPuXHKzufYHp9TY2q-LMx3OOMHN6bWp_vXi0eh2SgPhZjvmzN3hEBR413rZ=w1920-h963" alt="Mi foto de perfil" width="300">
+            <!--Contactos-->
+            <div class="Contactos">
+                <h3 class="titulo-lateral">Contacts</h3>
+                <div>
+                    <span class="tipo-contacto">C: </span>
+                    <a class="contacto-info" href="tel:+57 3126595570">+57 3126595570</a>
+                </div>
+                <div>
+                    <span class="tipo-contacto">E: </span>
+                    <a class="contacto-info" href="mailto:juantroaquero@gmail.com">juantroaquero@gmail.com</a>
+                </div>
+            </div>
+            <!--Habilidades tecnicas-->
+            <div class="Habilidades-tecincas">
+                <h3 class="titulo-lateral">Tech Skills</h3>
+                <ul class="lista-lateral">
+                    <li><span class="lista-info"> JAVA </span></li>
+                    <li><span class="lista-info"> HTML5 </span></li>
+                    <li><span class="lista-info"> CSS3 </span></li>
+                    <li><span class="lista-info"> GIT </span></li>
+                    <li><span class="lista-info"> C# </span></li>
+                    <li><span class="lista-info"> JavaScript </span></li>
+                    <li><span class="lista-info"> Angular </span></li>
+                    <li><span class="lista-info"> Node.js </span></li>
+                    <li><span class="lista-info"> Spring Boot </span></li>
+                    <li><span class="lista-info"> PHP </span></li>
+                    <li><span class="lista-info"> .NET (FRAMEWORK) </span></li>
+                    <li><span class="lista-info"> .NET CORE </span></li>
+                    <li><span class="lista-info"> Posmant </span></li>
+                    <li><span class="lista-info"> Bootstrap </span></li>
+                    <li><span class="lista-info"> SQL </span></li>
+                    <li><span class="lista-info"> SQL Server Reporting Services </span></li>
+                    <li><span class="lista-info"> SQL Server Profiler </span></li>
+                    <li><span class="lista-info"> Report Builder </span></li>
+                </ul>
+            </div>
+            <!--Habilidades blandas-->
+            <div class="Habilidades-blandas">
+                <h3 class="titulo-lateral">Soft Skills</h3>
+                <ul class="lista-lateral">
+                    <li><span class="lista-info"> Scrum </span></li>
+                    <li><span class="lista-info"> Agile </span></li>
+                    <li><span class="lista-info"> GTD </span></li>
+                    <li><span class="lista-info"> Teamwork </span></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+
+<script>
+
+    function generarPDF() {
+        // Obtener el contenido del <body> como un elemento DOM
+        const bodyContent = document.body;
+
+        // Capturar una imagen del contenido del <body> usando html2canvas
+        html2canvas(bodyContent).then((canvas) => {
+            // Convertir el canvas en una imagen base64
+            const imgData = canvas.toDataURL('image/png');
+
+            // Definir la estructura del documento PDF
+            const docDefinition = {
+                content: [
+                    {
+                        text: 'Contenido del Body en PDF',
+                        style: 'header',
+                    },
+                    {
+                        image: imgData, // Insertar la imagen capturada
+                        width: 500,    // Ancho de la imagen en el PDF (ajusta según sea necesario)
+                    },
+                ],
+                styles: {
+                    header: {
+                        fontSize: 18,
+                        bold: true,
+                        margin: [0, 0, 0, 10],
+                    },
+                },
+            };
+
+            // Generar el PDF
+            pdfMake.createPdf(docDefinition).download('mi_archivo.pdf');
+        });
+    }
+</script>
+</html>
