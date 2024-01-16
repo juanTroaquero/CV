@@ -11,219 +11,242 @@
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js "></script>
 
     <style>
-        body{
-    background-color: #F5F7FA;
-    font-family: 'Montserrat', 'Arial';
-}
+        body {
+            background-color: #F5F7FA;
+            font-family: 'Montserrat', 'Arial';
+        }
 
-/*--------------------*/
-/*contenedor-principal*/
-/*--------------------*/
+        /*--------------------*/
+        /*contenedor-principal*/
+        /*--------------------*/
 
-.contenedor-principal{
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: white;
-    width: 1200px;
-    margin: 40px auto;
-}
+        .contenedor-principal {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: white;
+            width: 1200px;
+            margin: 40px auto;
+        }
 
-li{
-    /*background-color: yellow;*/
-    line-height: 24px;
-}
+        li {
+            /*background-color: yellow;*/
+            line-height: 24px;
+        }
 
-.descripcion-profecion{
-    font-size: 14px;
-    font-weight: 700;
-    /* text-align: justify; */
-}
+        .descripcion-profecion {
+            font-size: 14px;
+            font-weight: 700;
+            /* text-align: justify; */
+        }
 
-/*-------------------*/
-/*Informacion General*/
-/*-------------------*/
+        /*-------------------*/
+        /*Informacion General*/
+        /*-------------------*/
 
-.informacion-general{
-    padding: 100px 80px;
-}
+        .informacion-general {
+            padding: 100px 80px;
+        }
 
-.nombre{
-    font-style: normal;
-    /* font-weight: 700; */
-    /* font-size: 45px; */
-    line-height: 55px;
-    color: #000000;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
+        .nombre {
+            font-style: normal;
+            /* font-weight: 700; */
+            /* font-size: 45px; */
+            line-height: 55px;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
 
-.texto-descripcion{
-    width: 800px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-}
+        .texto-descripcion {
+            width: 800px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #595959;
+        }
 
-/*---------------------*/
-/*secciones principales*/
-/*---------------------*/
+        /*---------------------*/
+        /*secciones principales*/
+        /*---------------------*/
 
-.titulo-seccion-principal {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    margin-top:  45px;
-}
+        .titulo-seccion-principal {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            margin-top: 45px;
+        }
 
-.texto-naranja{
-    color: #FB6D3A;
-}
+        .texto-naranja {
+            color: #FB6D3A;
+        }
 
-.fechas{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #A8A8A8;
-}
+        .fechas {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #A8A8A8;
+        }
 
-.descripcion{
-    margin-bottom: 40px;
-    text-align: justify;
-    width: auto;
-}
+        .descripcion {
+            margin-bottom: 40px;
+            text-align: justify;
+            width: auto;
+        }
 
-.lista-proyecto{
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 24px;
-padding-left: 17px;
-}
+        .lista-proyecto {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 17px;
+        }
 
-.enlace-proyecto{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+        .enlace-proyecto {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #595959;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
 
-.puntos-elences{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    color: #595959;
-}
+        .puntos-elences {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            color: #595959;
+        }
 
-/*------------------*/
-/*experiecia laboral*/
-/*------------------*/
+        /*------------------*/
+        /*experiecia laboral*/
+        /*------------------*/
 
-.puesto-empresa{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 15px;
-    margin-bottom: 11px;
-}
+        .puesto-empresa {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 15px;
+            margin-bottom: 11px;
+        }
 
-.lista-experiencia-laboral{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    padding-left: 17px;
-    text-align: justify;
-}
+        .lista-experiencia-laboral {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #595959;
+            padding-left: 17px;
+            text-align: justify;
+        }
 
-.separador{
-    color: black;
-    margin-left: 2px;
-    margin-right: 3px;
-}
+        .separador {
+            color: black;
+            margin-left: 2px;
+            margin-right: 3px;
+        }
 
-/*-------------------*/
-/*Informacion lateral*/
-/*-------------------*/
+        /*-------------------*/
+        /*Informacion lateral*/
+        /*-------------------*/
 
-.informacion-lateral{
-    background-color: #1E2939;
-    /*padding: 40px 0;*/
-    padding-top: 40px;
-}
+        .informacion-lateral {
+            background-color: #1E2939;
+            /*padding: 40px 0;*/
+            padding-top: 40px;
+        }
 
-.titulo-lateral{
-    color: white;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    margin-top: 50PX;
-    margin-bottom: 5px;
-}
+        .titulo-lateral {
+            color: white;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            margin-top: 50PX;
+            margin-bottom: 5px;
+        }
 
-.Contactos, .Habilidades-tecincas, .Habilidades-blandas{
-    margin-left: 20PX;
-}
+        .Contactos,
+        .Habilidades-tecincas,
+        .Habilidades-blandas {
+            margin-left: 20PX;
+        }
 
-.tipo-contacto{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: white;
-    margin-right: 5px;
-}
+        .tipo-contacto {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            margin-right: 5px;
+        }
 
-.contacto-info{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: white;
-    opacity: 0.5;
-    margin-top: 2px;
-}
+        .contacto-info {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            opacity: 0.5;
+            margin-top: 2px;
+        }
 
-/*--------------*/
-/*seccion listas*/
-/*--------------*/
+        /*--------------*/
+        /*seccion listas*/
+        /*--------------*/
 
-.lista-lateral{
-    padding: 17px;
-    margin-top: 5px;
-}
+        .lista-lateral {
+            padding: 17px;
+            margin-top: 5px;
+        }
 
-.lista-lateral > li{
-    color: #FB6D3A;
-}
+        .lista-lateral_2 {
+            /* padding: 17px;
+            margin-top: 0px; */
+        }
 
-.lista-info{
-    color: white;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-}
+        .lista-lateral>li {
+            color: #FB6D3A;
+        }
 
-.x{
-    line-height: 5px;
-}
+        .lista-lateral_2>li {
+            color: #FB6D3A;
+        }
+
+        .lista-info {
+            color: white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        /* .x {
+            line-height: 2px;
+            float: left;
+            padding: 2px 0px;
+        } */
+
+        .listaproncipal {
+            display: flex;
+        }
+
+        .lista1{
+            margin-left: -20px;
+        }
+
     </style>
 </head>
 
 <!-- <div>
     <button onclick="generarPDF()">Generar PDF del Body</button>
 </div> -->
+
 <body>
     <!--Contenedor principal-->
     <div class="contenedor-principal">
@@ -231,7 +254,7 @@ padding-left: 17px;
         <div class="informacion-general">
             <!--Descripcion-->
             <div class="descripcion">
-                <h2 class="descripcion-profecion">Developer</h2>
+                <h2 class="descripcion-profecion">Desarrollador</h2>
                 <h1 class="nombre">Juan Fernando Troaquero Arteaga</h1>
                 <p class="texto-descripcion">
                     Ingeniero de sistemas. Soy una persona
@@ -244,7 +267,7 @@ padding-left: 17px;
             </div>
             <!--procyecto-->
             <div class="proyecto">
-                <h3 class="titulo-seccion-principal">Projects</h3>
+                <h3 class="titulo-seccion-principal">Proyectos</h3>
                 <ol class="lista-proyecto">
                     <li class="primer-elemento-lista">
                         <a class="enlace-proyecto"
@@ -259,6 +282,12 @@ padding-left: 17px;
                         <span>[ HTML, CSS ]</span>
                     </li>
                     <li>
+                        <a class="enlace-proyecto" href="https://github.com/juanTroaquero/Sidebar">
+                            https://github.com/juanTroaquero/Sidebar </a>
+                        <span class="puntos-elences">................</span>
+                        <span>[ HTML, CSS ]</span>
+                    </li>
+                    <li>
                         <a class="enlace-proyecto" href="https://github.com/juanTroaquero/mi-primer-juego">
                             https://github.com/juanTroaquero/mi-primer-juego </a>
                         <span class="puntos-elences">....................</span>
@@ -268,16 +297,28 @@ padding-left: 17px;
                         <a class="enlace-proyecto" href="https://github.com/juanTroaquero/Campus-Virtual">
                             https://github.com/juanTroaquero/Campus-Virtual </a>
                         <span class="puntos-elences">....................</span>
-                        <span>[ Bootstrap, ASP.Net, C#, SQL, Java ]</span>
+                        <span>[ Bootstrap, ASP.NET, C#, SQL ]</span>
+                    </li>
+                    <li>
+                        <a class="enlace-proyecto" href="https://github.com/juanTroaquero/listadoTareas_Backend">
+                            https://github.com/juanTroaquero/listadoTareas_Backend </a>
+                        <span class="puntos-elences">....................</span>
+                        <span>[ .NET CORE ]</span>
+                    </li>
+                    <li>
+                        <a class="enlace-proyecto" href="https://github.com/juanTroaquero/listadoDeTareas_Frontend">
+                            https://github.com/juanTroaquero/listadoDeTareas_Frontend </a>
+                        <span class="puntos-elences">....................</span>
+                        <span>[ vue.js ]</span>
                     </li>
                 </ol>
             </div>
             <!--Experiencia-->
             <div class="Experiencia-laboral">
-                <h3 class="titulo-seccion-principal">Work Experience</h3>
+                <h3 class="titulo-seccion-principal">Experiencia laboral</h3>
                 <!--Empresa 1-->
                 <div>
-                    <h4 class="puesto-empresa">Empresa Sisma: Developer<span class="texto-naranja"> Freelance</span>
+                    <h4 class="puesto-empresa">Empresa Sisma: Desarrollador<span class="texto-naranja"> Freelance</span>
                     </h4>
                     <p class="fechas">Enero 2022 - febrero 2022 <span class="separador">|</span> Colombia</p>
                     <ul class="lista-experiencia-laboral">
@@ -288,31 +329,37 @@ padding-left: 17px;
                 </div>
                 <!--Empresa 2-->
                 <div>
-                    <h4 class="puesto-empresa">Empresa R&JTECHNOLOGY S.A.S : Developer<span class="texto-naranja">
+                    <h4 class="puesto-empresa">Empresa R&JTECHNOLOGY S.A.S : Desarrollador<span class="texto-naranja">
                             Freelance</span></h4>
                     <p class="fechas">Septiembre 2022 - marzo 2023 <span class="separador">|</span> Colombia</p>
                     <ul class="lista-experiencia-laboral">
                         <li>En esta empresa trabaje con varias tecnologías siendo la tecnología
-                            principal de trabajo .NET FRAMEWORK, implementando lenguajes como ASP.NET, C#, Java, Bootstrap, AJAX, jquery, motor sql de Azure, JavaScript, canvas, manejo de
-                            AWS para la implentacion de servicios y seguimiento en la nueve como AWS Lambda, AWS EKS, AWS SQS todo esto para la creación de formularios y mejoramiento del software clínico Total Quality.</li>
+                            principal de trabajo .NET FRAMEWORK, implementando lenguajes como ASP.NET, C#, Java,
+                            Bootstrap, AJAX, jquery, motor sql de Azure, JavaScript, canvas, manejo de
+                            AWS para la implentacion de servicios y seguimiento en la nueve como AWS Lambda, AWS EKS, VPC,
+                            AWS SQS todo esto para la creación de formularios y mejoramiento del software
+                            clínico Total Quality.</li>
                     </ul>
                 </div>
                 <!--Empresa 3-->
                 <div>
-                    <h4 class="puesto-empresa">Empresa Fuel Control(FCS): data analyst<span class="texto-naranja">
+                    <h4 class="puesto-empresa">Empresa Fuel Control(FCS): Analista de datos<span class="texto-naranja">
                             medium</span></h4>
                     <p class="fechas">marzo 2023 - septiembre 2023 <span class="separador">|</span> Colombia</p>
                     <ul class="lista-experiencia-laboral">
-                        <li>En esta empresa ejercí cómo analista de datos para el área de soporte de Fuel Control Solución, empresa enfocada al sector industrial de combustibles
-                            y estaciones de servicios, brindando acompañamiento y soluciones inmediatas a las estaciones de servicios con problemas presentados en los sistemas
-                            proporcionados por la empresa donde se manejan a nivel software y hardware, herramienta base SQL Server </li>
+                        <li>En esta empresa ejercí cómo analista de datos para el área de soporte de Fuel Control
+                            Solución, empresa enfocada al sector industrial de combustibles
+                            y estaciones de servicios, brindando acompañamiento y soluciones inmediatas a las estaciones
+                            de servicios con problemas presentados en los sistemas
+                            proporcionados por la empresa donde se manejan a nivel software y hardware, herramienta base
+                            SQL Server </li>
                     </ul>
                 </div>
                 <!------empresa 4-------->
             </div>
             <!--Educación-->
             <div class="Educación">
-                <h3 class="titulo-seccion-principal">Education</h3>
+                <h3 class="titulo-seccion-principal">Educación</h3>
                 <div>
                     <h4 class="texto-naranja">UNIVERSISDAD COOPERATIVA DE COLOMBIA</h4>
                     <p class="fechas">Enero 2017 - marzo 2022 <span class="separador">|</span> Colombia</p>
@@ -320,49 +367,63 @@ padding-left: 17px;
                         <li>
                             <h5>Titulo univesitario</h5>
                         </li>
+                    </ul>                    
+                    <p class="fechas">Septiembre 2021 - Novimebre 2021 <span class="separador">|</span> Colombia</p>
+                    <ul>
+                        <li>
+                            <h5>Seminario Taller en Administración, seguridad y gestión en redes</h5>
+                        </li>
                     </ul>
                     <h4 class="texto-naranja">CURSOS RELEVANTES</h4>
                     <p class="fechas">Enero 2021 - marzo 2023 <span class="separador">|</span> Colombia</p>
-                    <ul>
-                        <li class="x">
-                            <h5>Plazi | Backend con C# y .NET</h5>
-                        </li>
-                        <li class="x">
-                            <h5>Plazi | Curso de Fundamentos de Entity Framework</h5>
-                        </li>
-                        <li class="x">
-                            <h5>Plazi | Curso de C# con .Net Core 2.1</h5>
-                        </li>
-                        <li class="x">
-                            <h5>Udemy | Full Stack JavaScript Developer</h5>
-                        </li>
-                        <li class="x">
-                            <h5>Udemy | Learn C# Programming With Database from Scratch</h5>                         
-                        </li>       
-                        <li class="x">
-                            <h5>Udemy | .NET Core Microservices (.NET 8 MVC) </h5>                         
-                        </li> 
-                        <li class="x">
-                            <h5>Udemy | ASP.NET 8 Web Apis con Blazor y Postgres </h5>                         
-                        </li>
-                        <li class="x">
-                            <h5>AWS | Master en AWS Amazon Web Services </h5>                         
-                        </li> 
-                    </ul>
+                    <div class="listaproncipal">
+                        <div class="lista1">
+                            <ul class="menuUl">
+                                <li class="x">
+                                    <h5>Plazi | Backend con C# y .NET</h5>
+                                </li>
+                                <li class="x">
+                                    <h5>Plazi | Curso de Fundamentos de Entity Framework</h5>
+                                </li>
+                                <li class="x">
+                                    <h5>Plazi | Curso de C# con .Net Core 2.1</h5>
+                                </li>
+                                <li class="x">
+                                    <h5>Udemy | Full Stack JavaScript Developer</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lista2">
+                            <ul class="menuUl2">
+                                <li class="x">
+                                    <h5>Udemy | .NET Core Microservices (.NET 8 MVC) </h5>
+                                </li>
+                                <li class="x">
+                                    <h5>Udemy | Learn C# Programming With Database from Scratch</h5>                                    
+                                </li>
+                                <li class="x">
+                                    <h5>Udemy | ASP.NET 8 Web Apis con Blazor y Postgres </h5>
+                                </li>
+                                <li class="x">
+                                    <h5>AWS | Master en AWS Amazon Web Services </h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!--Informacion lateral-->
         <aside class="informacion-lateral">
-           
+
             <picture>
-                <img src="img/yo.jpeg" width="100%" height="auto"/>
+                <img src="img/yo.jpeg" width="100%" height="auto" />
             </picture>
-            
-            
+
+
             <!--Contactos-->
             <div class="Contactos">
-                <h3 class="titulo-lateral">Contacts</h3>
+                <h3 class="titulo-lateral">Contactos</h3>
                 <div>
                     <span class="tipo-contacto">C: </span>
                     <a class="contacto-info" href="tel:+57 3126595570">+57 3126595570</a>
@@ -374,12 +435,12 @@ padding-left: 17px;
             </div>
             <!--Habilidades tecnicas-->
             <div class="Habilidades-tecincas">
-                <h3 class="titulo-lateral">Tech Skills</h3>
+                <h3 class="titulo-lateral">Habilidades</h3>
                 <ul class="lista-lateral">
                     <li><span class="lista-info"> C# </span></li>
                     <li><span class="lista-info"> .NET</span></li>
                     <li><span class="lista-info"> JavaScript </span></li>
-                    <li><span class="lista-info"> GIT </span></li>                 
+                    <li><span class="lista-info"> GIT </span></li>
                     <li><span class="lista-info"> AWS </span></li>
                     <li><span class="lista-info"> SQL Server </span></li>
                     <li><span class="lista-info"> CSS3 </span></li>
@@ -387,9 +448,37 @@ padding-left: 17px;
             </div>
             <!--Habilidades blandas-->
             <div class="Habilidades-blandas">
-                <h3 class="titulo-lateral">Soft Skills</h3>
+                <h3 class="titulo-lateral">Habilidades blandas</h3>
                 <ul class="lista-lateral">
                     <li><span class="lista-info"> Scrum </span></li>
+                </ul>
+            </div>
+            <div class="Habilidades-blandas">
+                <h3 class="titulo-lateral">Referencias</h3>
+                <ul class="lista-lateral_2">
+                    <li><span class="lista-info"> Marlon Miranda </span></li>
+                    <span class="tipo-contacto">C: </span>
+                    <a class="contacto-info" href="tel:+57 3126595570">+57 3173202747</a>
+                </ul>
+                <ul class="lista-lateral_2">
+                    <li><span class="lista-info"> Elias Morales </span></li>
+                    <span class="tipo-contacto">C: </span>
+                    <a class="contacto-info" href="tel:+57 3126595570">+57 3006666365</a>
+                </ul>
+                <ul class="lista-lateral_2">
+                    <li><span class="lista-info"> Rubén Baena </span></li>
+                    <span class="tipo-contacto">C: </span>
+                    <a class="contacto-info" href="tel:+57 3126595570">+57 3013486256</a>
+                </ul>
+                <ul class="lista-lateral_2">
+                    <li><span class="lista-info"> Miguel Hernandez </span></li>
+                    <span class="tipo-contacto">C: </span>
+                    <a class="contacto-info" href="tel:+57 3126595570">+57 3174321237</a>
+                </ul>
+                <ul class="lista-lateral_2">
+                    <li><span class="lista-info"> Jorge Viloria </span></li>
+                    <span class="tipo-contacto">C: </span>
+                    <a class="contacto-info" href="tel:+57 3126595570">+57 3053743294</a>
                 </ul>
             </div>
         </aside>
@@ -400,7 +489,7 @@ padding-left: 17px;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
 
-<!-- 
+<!--
 <script>
 
     function generarPDF() {
@@ -438,4 +527,5 @@ padding-left: 17px;
         });
     }
 </script> -->
+
 </html>
